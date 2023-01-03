@@ -57,6 +57,7 @@ The theme needs to be reloaded after changing anything in this group."
       (organic-green-4   "#008B45")
       (organic-green-5   "#00A86B")
       (organic-green-6   "dark sea green")
+      (organic-green-7   "#CDF7CD")
 
       (organic-blue-0    "#8CC4FF")
       (organic-blue-1    "LightSkyBlue3")
@@ -141,16 +142,17 @@ The theme needs to be reloaded after changing anything in this group."
    `(font-lock-variable-name-face ((,class (:foreground ,organic-yellow-4 :width condensed))))
    `(font-lock-warning-face ((,class (:foreground ,organic-red-6 :weight ,organic-green-bold))))
 
+
    ;; ui
    `(cursor ((,class (:background ,organic-cursor-fg))))
    `(fringe ((,class (:background ,organic-fringe-bg :foreground ,organic-fringe-fg))))
    `(vertical-border ((,class (:foreground ,organic-fringe-fg))))
    `(minibuffer-prompt ((,class (:foreground ,organic-blue-6 :weight bold))))
-   `(mode-line ((t (:underline nil :overline nil :box (:line-width 6 :color ,organic-green-1 :style nil) :foreground ,organic-green-2 :background ,organic-green-1))))
+   `(mode-line ((t (:underline nil :overline nil :box (:line-width 6 :color ,organic-green-7 :style nil) :foreground ,organic-green-2 :background ,organic-green-7))))
    `(mode-line-buffer-id ((t (:weight bold))))
    `(mode-line-emphasis ((t (:weight bold))))
    `(mode-line-highlight ((((class color) (min-colors 88)) (:box (:line-width 1 :color ,organic-green-5 :style nil))) (t (:inherit (highlight)))))
-   `(mode-line-inactive ((t (:weight light :underline nil :overline nil :box (:line-width 6 :color ,organic-green-1 :style nil) :foreground "white" :background ,organic-green-1 :inherit (mode-line)))))
+   `(mode-line-inactive ((t (:weight light :underline nil :overline nil :box (:line-width 6 :color ,organic-green-7 :style nil) :foreground ,organic-green-2 :background ,organic-green-7 :inherit (mode-line)))))
    `(link ((,class (:underline t :foreground ,organic-blue-6))))
    `(link-visited ((,class (:underline t :foreground ,organic-blue-5))))
    `(highlight ((,class (:background ,organic-green-0))))
